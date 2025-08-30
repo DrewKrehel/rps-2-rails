@@ -1,4 +1,4 @@
-class MovesController < AppllicationController
+class MovesController < ApplicationController
   def play
     @moves = ["rock", "paper", "scissors"]
     @comp_moves = @moves.sample
@@ -17,6 +17,6 @@ class MovesController < AppllicationController
       @outcome = "won"
     end
 
-    render ({ :template => "game_templates/flexible.erb"})
+    render ({ :template => "game_templates/flexible"})
   end
 end
